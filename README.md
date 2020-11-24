@@ -43,8 +43,12 @@ npm run scss
 
 # Layout
 
-<img src="./src/img/wildbest-mob.png" alt="Page Mobile" width="150"/>
-<img src="./src/img/wildbest-desk.png" alt="Page Desktop" width="574"/>  
+| Mobile | Desktop |
+|:---------|---------|
+| <img src="./src/img/wildbest-mob.png" alt="Page Mobile" width="150"/> |  <img src="./src/img/wildbest-desk.png" alt="Page Desktop" width="574"/> |
+
+<!-- <img src="./src/img/wildbest-mob.png" alt="Page Mobile" width="150"/>
+<img src="./src/img/wildbest-desk.png" alt="Page Desktop" width="574"/>   -->
   
 <br/>
 <br/>
