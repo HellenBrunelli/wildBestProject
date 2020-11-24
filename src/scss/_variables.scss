@@ -1,0 +1,38 @@
+// Fonts
+$fontPrimary: 'Vollkorn', Georgia, serif;
+$fontForm: Courier, monospace;
+
+$bold: bold;
+$italic: italic;
+
+//gutter
+$gutter: 16px;
+
+
+// Colors
+$white: #fff;
+
+$brightTurquoiseGren: #08FDD8;
+$brightTurquoiseBlue: #00DFEC;
+$ceruleanLight: #00BEF2;
+$ceruleanDark: #009AE4;
+$indigoLight: #5474C2;
+$indigoDark: #724F93;
+$colorShadow: rgba(44,44,44, 0.15);
+$royalBlue: #8844ee;
+$heliotrope: #B07DFB;
+
+
+//Shadows
+$shadowDefault: 5px 5px 15px 0px $colorShadow;
+
+
+//Background
+// $bgDefault: linear-gradient(135deg, #8844ee, #B07DFB);
+$bgDefault: linear-gradient(135deg, #B07DFB, #009AE4);
+
+
+// Breakpoints
+$mobile: 768px;
+$tablet: 600px;
+$desktop: 1200px

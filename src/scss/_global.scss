@@ -1,0 +1,70 @@
+//
+// ALL DEVICES
+//_____________________________________________
+body {
+    font-family: $fontPrimary;
+}
+
+img {
+    display: block;
+    
+    width: 100%;
+    max-width: 100%;
+
+    border-radius: 6px;
+}
+
+.structure {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "sidenav"
+    "content"
+    "ads"
+    "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidenav {
+    grid-area: sidenav;
+}
+.content {
+    grid-area: content;
+}
+.ads {
+    grid-area: ads;
+}
+.footer {
+    grid-area: footer;
+}
+
+//
+// SMALL DEVICES
+//_____________________________________________
+@media (min-width: $mobile) {
+    .structure {
+        grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+        grid-template-areas:
+        "header header header"
+        "sidenav content content"
+        "sidenav ads ads"
+        "footer footer footer";
+    }    
+}
+
+//
+// LARGE DEVICES
+//_____________________________________________
+@media (min-width: $desktop) {
+    .structure {
+        grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+        grid-template-areas:
+        "header header header"
+        "sidenav content ads"
+        "footer footer footer";
+    }
+}

@@ -1,0 +1,12 @@
+.footer {
+    grid-area: footer;
+
+    background:  $bgDefault;
+
+    .by {
+        padding: $gutter*2;
+        
+        color: $white;
+        text-align: center;
+    }
+}

@@ -1,0 +1,77 @@
+//
+// ALL DEVICES
+//___________________________________________
+.header {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    
+    padding: $gutter*2;
+    
+    background: $bgDefault;
+    
+    .logo {
+        max-width: 200px;
+    
+        margin-bottom: $gutter*2;
+    }
+    .navbar {
+        .navbar-list {
+            display: flex;
+            flex-wrap: wrap;
+            
+            .navbar-item {
+                & + li {
+                    margin-left: $gutter*2;
+                }
+
+                .navbar-link {
+                    display: block;
+    
+                    padding: $gutter;
+    
+                    color: $white;
+    
+                    background: rgba(0,0,0, .1);
+                    border-radius: 6px;
+                    transition: .1s;
+                    
+                    &:hover {
+                        background: rgba(0,0,0, .5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+// SMALL DEVICES
+//___________________________________________
+@media (max-width: $mobile) {
+    .header {
+        .logo {
+            margin-bottom: $gutter*2;
+        }
+        .navbar {
+            .navbar-list {
+                .navbar-item {
+                    & + li {
+                        margin-left: $gutter;
+                    }
+                    .navbar-link {
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+// LARGE DEVICES
+//___________________________________________
+@media (min-width: $desktop) {
+    .header {
+        grid-template-columns: 1fr auto; //desk
+    }
+}

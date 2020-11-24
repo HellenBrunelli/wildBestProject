@@ -1,0 +1,21 @@
+{
+  "name": "wildBestProject",
+  "version": "1.0.0",
+  "description": "Projeto WildBest desenvolvido durante aula de CSS Grid da [Origamid](https://www.origamid.com/)",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch src/scss/style.scss:src/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HellenBrunelli/wildBestProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HellenBrunelli/wildBestProject/issues"
+  },
+  "homepage": "https://github.com/HellenBrunelli/wildBestProject#readme"
+}

@@ -1,0 +1,85 @@
+//
+// ALL DEVICES
+//___________________________________________
+.sidenav {
+    grid-area: sidenav;
+    
+    padding: $gutter*2;
+    
+    background: #fafbfc;
+
+    &-link {
+        display: block;
+        
+        min-width: 60px;
+        max-width: 100px;
+
+        padding: $gutter*2;
+
+        background: $white;
+        
+        border-radius: 4px;
+        box-shadow: $shadowDefault;   
+
+        transition: .1s ease-in-out;
+        
+        &:hover {
+            background: $heliotrope;
+        }
+    }
+}
+
+//
+// SMALL DEVICES
+//___________________________________________
+@media (max-width: $mobile) {
+    .sidenav {
+        position: relative;
+
+        padding: 0 $gutter*2;
+
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+
+        &::after {
+            content: '→';
+            position: absolute;
+            top: 5px;
+            right: $gutter*2;
+
+            color: rgba(0,0,0, .3);
+
+            animation: arrow .5s ease-in 0s infinite alternate;
+        }
+        &-list {
+            display: flex;
+        }
+        &-item {
+            flex: 1 0 60px;
+        }
+        &-link {
+            margin: $gutter*2 $gutter*2 $gutter*2 0;
+        }
+    }
+
+    @keyframes arrow {
+        from {
+            right: $gutter*2;
+        }
+        to {
+            right: $gutter;
+        }
+    }
+}
+
+//
+// TABLET DEVICES
+//___________________________________________
+@media (min-width: $mobile) {
+    .sidenav {
+        &-link {
+            margin: 0 auto $gutter*2 auto;
+        }
+    }
+}

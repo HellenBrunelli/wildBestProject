@@ -1,0 +1,8 @@
+// 0.0625rem is equivalent to 1px as for 16px as the fontbase used in this project
+@mixin font-size($sizeValue, $fontBase: 0.0625) {
+    $remValue: calc(#{$sizeValue} * #{$fontBase});
+    $pxValue: $sizeValue;
+
+    font-size: #{$pxValue}px;
+    font-size: #{$remValue}rem;
+}

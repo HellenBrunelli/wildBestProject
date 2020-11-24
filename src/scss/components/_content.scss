@@ -1,0 +1,167 @@
+//
+// ALL DEVICES
+//___________________________________________
+.content {
+    display: grid;
+    grid-gap: $gutter*2;
+    grid-area: content;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: $gutter*2;
+
+    .col-wide {
+        grid-column: 1 / -1;
+    }
+    /*Images*/
+    .first-image {
+        grid-row: span 2;
+        align-self: end;
+    }
+    .second-image {
+        align-self: end;
+    }
+
+    p {
+        @include font-size(18);
+        line-height: 1.6;
+        color: rgba(0,0,0,.7);
+        letter-spacing: -0.005em;
+    }
+    .information {
+        p + p {
+            margin-top: $gutter*2;
+        }
+    }
+
+    .title {
+        color: $heliotrope;
+
+        h1 {
+            @include font-size(60);
+            font-weight: $bold;
+            line-height: 1;
+        }
+        span {
+            @include font-size(14);
+            font-style: $italic;
+        };
+    }
+    .characteristic {
+        display: flex;
+        align-items: flex-start;
+        
+        & > .item {
+            position: relative;
+
+            width: 80px;
+
+            text-align: center;
+
+            background: $bgDefault;
+            border-radius: 6px;
+            box-shadow: $shadowDefault;
+
+            &:first-child {
+                margin-right: $gutter*2;
+            }
+
+            span {
+                display: block;
+
+                color: $heliotrope;
+            }
+
+            .number {
+                margin: $gutter auto;
+
+                @include font-size(50);
+                line-height: 1;
+            }
+            .label {
+                position: relative;
+                top: 2px;
+
+                padding: $gutter/2;
+
+                background: $white;
+                border-radius: 0 0 6px 6px;
+            }
+        }
+    }
+    .destac-text {
+        max-width: 16em;
+
+        @include font-size(16);
+        color: $heliotrope;
+    }
+
+    .quote {
+        padding: $gutter*2;
+
+        align-self: start;
+        
+        background: $bgDefault;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+        
+        p {
+            max-width: 500px;
+
+            margin: 0 auto;
+
+            font-size: 1.5em;
+            font-style: $italic;
+            text-align: center;
+            color: $white;
+        }
+    }
+    .attribute-list {
+        align-self: start;
+        
+        padding: $gutter*2;
+        
+        background: $bgDefault;
+        
+        border-radius: 6px;
+        box-shadow: 5px 5px 15px 0px $shadowDefault;
+
+        li {
+            padding: $gutter;
+        
+            @include font-size(18);
+            font-family: $fontForm;
+            color: $white;
+            font-weight: $bold;
+
+            & + li {
+                border-top: 2px solid $heliotrope;
+            }
+        }
+    }
+}
+
+//
+// SMALL DEVICES
+//____________________________________________
+@media (max-width: $mobile) {
+    .content {
+        grid-template-columns: auto;
+    }
+}
+
+//
+// TABLET DEVICES
+//____________________________________________
+@media (min-width: $tablet) {
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+//
+// LARGE DEVICES
+//____________________________________________
+@media (min-width: $desktop) {}
