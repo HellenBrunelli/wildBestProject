@@ -10,7 +10,6 @@ Projeto WildBest desenvolvido durante aula de CSS Grid da [Origamid](https://www
 Você pode visualizar a página __[aqui](https://wildbeast-project.netlify.app/)__.  
 
 <br/>
-<br/>
 
 ## __**Diferenciais:**__
 * **SASS e variáveis**: Utilizando o pré-processador [SASS](https://sass-lang.com/), conseguimos manter a organização.   
@@ -39,7 +38,6 @@ npm run scss
 ```  
 <br/>  
 <br/>
-<br/>
 
 # Layout
 
@@ -47,10 +45,6 @@ npm run scss
 |:---------|---------|
 | <img src="./src/img/wildbest-mob.png" alt="Page Mobile" width="150"/> |  <img src="./src/img/wildbest-desk.png" alt="Page Desktop" width="574"/> |
 
-<!-- <img src="./src/img/wildbest-mob.png" alt="Page Mobile" width="150"/>
-<img src="./src/img/wildbest-desk.png" alt="Page Desktop" width="574"/>   -->
-  
-<br/>
 <br/>
 <br/>
 
